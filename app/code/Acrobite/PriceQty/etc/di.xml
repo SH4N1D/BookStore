@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Pricing\Price\FinalPrice">
+        <plugin name="multiply_product_price" type="Acrobite\PriceQty\Plugin\ProductPricePlugin"/>
+    </type>
+
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="force_cart_qty" type="Acrobite\PriceQty\Plugin\CartQtyPlugin"/>
+    </type>
+</config>
